@@ -10,14 +10,14 @@ count = int(sys.argv[2])
 print "HTTP address received:", address
 print "Count received:", count
 
-driver = webdriver.Chrome(executable_path="/tmp/chromedriver")  
+driver = webdriver.Chrome(executable_path="/tmp/chromedriver")
 
 if (address and count):
   driver.get(address)
-  time.sleep(8)
+  time.sleep(5)
 
   for numer in range(1,count):
-    driver.execute_script("javascript:window.scrollBy(0,5000)")
+    driver.execute_script("javascript:window.scrollBy(0,100)")
     time.sleep(1)
 
 # driver.quit()
