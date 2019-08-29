@@ -11,7 +11,7 @@ while i < len(sys.argv):
 # while i < 4:
     phrase = sys.argv[i]
 
-    open_link = "http://maps.google.com/maps?q=" + phrase
+    open_link = "http://maps.google.co.uk/maps?q=" + phrase
 
     driver.get(open_link)
 

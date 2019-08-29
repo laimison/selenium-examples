@@ -10,8 +10,8 @@
 
 ```
 atom .phrases
-LIST=`cat .phrases | while read -r line; do echo \"$line\"; done`
-./get_coordinates.py $(cat .phrases)
+LIST=`cat .phrases | while read -r line; do echo \"$line\"; done`; echo $LIST
+./get_coordinates.py <paste>
 ```
 
 or
