@@ -4,7 +4,7 @@ import sys
 import time
 from selenium import webdriver
 
-driver = webdriver.Chrome(executable_path="/tmp/chromedriver")
+driver = webdriver.Chrome(executable_path="/root/chromedriver")
 
 i = 1
 while i < len(sys.argv):
@@ -15,7 +15,7 @@ while i < len(sys.argv):
 
     driver.get(open_link)
 
-    time.sleep(15)
+    time.sleep(8)
 
     lat = driver.current_url.split('/')[6].split(',')[0].replace("@", "")
     long = driver.current_url.split('/')[6].split(',')[1]
