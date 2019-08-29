@@ -15,7 +15,7 @@ while i < len(sys.argv):
 
     driver.get(open_link)
 
-    time.sleep(5)
+    time.sleep(15)
 
     lat = driver.current_url.split('/')[6].split(',')[0].replace("@", "")
     long = driver.current_url.split('/')[6].split(',')[1]
