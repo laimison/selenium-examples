@@ -18,5 +18,6 @@ or
 
 ```
 atom .postcodes
-./get_coordinates.py `cat .postcodes | while read -r line; do echo \'$line\'; done`
+LIST=`cat .postcodes | while read -r line; do echo \"$line\"; done`; echo $LIST
+./get_coordinates.py <paste>
 ```
